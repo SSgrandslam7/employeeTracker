@@ -1,13 +1,17 @@
 {
     "name": "employee-tracker",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "index.ts",
     "scripts": {
-        "start": "node index.js"
+        "start": "ts-node index.ts"
     },
     "dependencies": {
         "dotenv": "^16.5.0",
         "inquirer": "^12.6.1",
         "pg": "^8.16.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.21",
+        "@types/pg": "^8.15.2"
     }
 }
