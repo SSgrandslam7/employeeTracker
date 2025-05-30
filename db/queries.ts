@@ -35,7 +35,7 @@ import pool from './connection';
     };
 
     export const addEmployee = async (first: string, last: string, role_id: number, manager_id: number | null): Promise<void> => {
-        await pool.query('INSERT INTO role (first_name, last_name, role_id, manager_id) VALUES ($1, $2, $3, $4)', [first, last, role_id, manager_id]);
+        await pool.query('INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ($1, $2, $3, $4)', [first, last, role_id, manager_id]);
     };
 
     export const updateEmployeeRole = async (employee_id: number, role_id: number): Promise<void> => {
